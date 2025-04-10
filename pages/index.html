@@ -3,11 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Book | Cooked with love</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Made with love</title>
+    <link rel="stylesheet" href="/RecipeBook/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
-    
-    <script src="/app.js"></script>
+    <header>
+        <h1>Recipe Book</h1>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fas fa-plus-circle"></i>Add Recipe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-info">
+                <h2>Welcome to the Recipe Book</h2>
+                <p>A personal collection of beloved recipes made with love and care, just for you.</p>
+                <div class="search-container" id="search-bar">
+                    <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+                    <input placeholder="Search" type="search" class="input">
+                </div>
+                <div id="categories">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-coffee"></i> Breakfast</a></li>
+                        <li><a href="#"><i class="fas fa-hamburger"></i> Lunch</a></li>
+                        <li><a href="#"><i class="fas fa-utensils"></i> Dinner</a></li>
+                        <li><a href="#"><i class="fas fa-birthday-cake"></i> Dessert</a></li>
+                        <li><a href="#"><i class="fas fa-leaf"></i> Vegan</a></li>
+                        <li><a href="#"><i class="fas fa-bolt"></i> Quick & Easy</a></li>  
+                    </ul>
+                </div>
+            </div>
+            <div class="hero-image"></div>  
+        </section>
+
+        <section id="recipes">
+            <h2>Explore my <span class="Emphasis">Delicious</span> Recipes</h2>
+            <div class="recipe-grid">
+                <!-- Recipe cards will be added here dynamically-->
+
+                <!-- Example Recipe Card -->
+                <a href="openRecipeInfoModal('Spaghetti Carbonara')" class="recipe-card">
+                    <img src="/RecipeBook/images/recipe1.jpg" alt="Recipe 1">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p><i class="far fa-clock"></i><span id="time">15 minutes</span></p>
+                    <p><i class="fas fa-utensils"></i><span id="servings">2 servings</span></p>
+                    <span id="difficulty"></span>
+                </a>
+                <a href="#" class="recipe-card">
+                    <img src="/RecipeBook/images/recipe2.jpg" alt="Avocado Toast">
+                    <h3>Avocado Toast</h3>
+                    <p><i class="far fa-clock"></i><span id="time">10 minutes</span></p>
+                    <p><i class="fas fa-utensils"></i><span id="servings">1 serving</span></p>
+                    <span id="difficulty"></span>
+                </a>
+                
+                <a href="#" class="recipe-card">
+                    <img src="/RecipeBook/images/recipe3.jpg" alt="Berry Smoothie Bowl">
+                    <h3>Berry Smoothie Bowl</h3>
+                    <p><i class="far fa-clock"></i><span id="time">5 minutes</span></p>
+                    <p><i class="fas fa-utensils"></i><span id="servings">1 serving</span></p>
+                    <span id="difficulty"></span>
+                </a>
+                
+                <a href="#" class="recipe-card">
+                    <img src="/RecipeBook/images/recipe4.jpg" alt="Chicken Alfredo">
+                    <h3>Creamy Chicken Alfredo</h3>
+                    <p><i class="far fa-clock"></i><span id="time">30 minutes</span></p>
+                    <p><i class="fas fa-utensils"></i><span id="servings">3 servings</span></p>
+                    <span id="difficulty"></span>
+                </a>
+                
+                <a href="#" class="recipe-card">
+                    <img src="/RecipeBook/images/recipe5.jpg" alt="Chocolate Cake">
+                    <h3>Decadent Chocolate Cake</h3>
+                    <p><i class="far fa-clock"></i><span id="time">1 hour</span></p>
+                    <p><i class="fas fa-utensils"></i><span id="servings">8 servings</span></p>
+                    <span id="difficulty"></span>
+                </a>
+                
+                <a href="#" class="recipe-card">
+                    <img src="/RecipeBook/images/recipe6.jpg" alt="Sushi Platter">
+                    <h3>Homemade Sushi Platter</h3>
+                    <p><i class="far fa-clock"></i><span id="time">45 minutes</span></p>
+                    <p><i class="fas fa-utensils"></i><span id="servings">4 servings</span></p>
+                    <span id="difficulty"></span>
+                </a>
+                
+                <a href="#" class="recipe-card">
+                    <img src="/RecipeBook/images/recipe7.jpg" alt="Vegan Buddha Bowl">
+                    <h3>Vegan Buddha Bowl</h3>
+                    <p><i class="far fa-clock"></i><span id="time">20 minutes</span></p>
+                    <p><i class="fas fa-utensils"></i><span id="servings">2 servings</span></p>
+                    <span id="difficulty"></span>
+                </a>                
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>Made with <i class="fas fa-heart"></i> for someone special</p>
+    </footer>
 </body>
 </html>
