@@ -43,70 +43,18 @@
 
         <section id="recipes">
             <h2>Explore my <span class="Emphasis">Delicious</span> Recipes</h2>
-            <div class="recipe-grid">
-                <!-- Recipe cards will be added here dynamically-->
-
-                <!-- Example Recipe Card -->
-                <a href="openRecipeInfoModal('Spaghetti Carbonara')" class="recipe-card">
-                    <img src="/RecipeBook/images/recipe1.jpg" alt="Recipe 1">
-                    <h3>Spaghetti Carbonara</h3>
-                    <p><i class="far fa-clock"></i><span id="time">15 minutes</span></p>
-                    <p><i class="fas fa-utensils"></i><span id="servings">2 servings</span></p>
-                    <span id="difficulty"></span>
-                </a>
-                <a href="#" class="recipe-card">
-                    <img src="/RecipeBook/images/recipe2.jpg" alt="Avocado Toast">
-                    <h3>Avocado Toast</h3>
-                    <p><i class="far fa-clock"></i><span id="time">10 minutes</span></p>
-                    <p><i class="fas fa-utensils"></i><span id="servings">1 serving</span></p>
-                    <span id="difficulty"></span>
-                </a>
-                
-                <a href="#" class="recipe-card">
-                    <img src="/RecipeBook/images/recipe3.jpg" alt="Berry Smoothie Bowl">
-                    <h3>Berry Smoothie Bowl</h3>
-                    <p><i class="far fa-clock"></i><span id="time">5 minutes</span></p>
-                    <p><i class="fas fa-utensils"></i><span id="servings">1 serving</span></p>
-                    <span id="difficulty"></span>
-                </a>
-                
-                <a href="#" class="recipe-card">
-                    <img src="/RecipeBook/images/recipe4.jpg" alt="Chicken Alfredo">
-                    <h3>Creamy Chicken Alfredo</h3>
-                    <p><i class="far fa-clock"></i><span id="time">30 minutes</span></p>
-                    <p><i class="fas fa-utensils"></i><span id="servings">3 servings</span></p>
-                    <span id="difficulty"></span>
-                </a>
-                
-                <a href="#" class="recipe-card">
-                    <img src="/RecipeBook/images/recipe5.jpg" alt="Chocolate Cake">
-                    <h3>Decadent Chocolate Cake</h3>
-                    <p><i class="far fa-clock"></i><span id="time">1 hour</span></p>
-                    <p><i class="fas fa-utensils"></i><span id="servings">8 servings</span></p>
-                    <span id="difficulty"></span>
-                </a>
-                
-                <a href="#" class="recipe-card">
-                    <img src="/RecipeBook/images/recipe6.jpg" alt="Sushi Platter">
-                    <h3>Homemade Sushi Platter</h3>
-                    <p><i class="far fa-clock"></i><span id="time">45 minutes</span></p>
-                    <p><i class="fas fa-utensils"></i><span id="servings">4 servings</span></p>
-                    <span id="difficulty"></span>
-                </a>
-                
-                <a href="#" class="recipe-card">
-                    <img src="/RecipeBook/images/recipe7.jpg" alt="Vegan Buddha Bowl">
-                    <h3>Vegan Buddha Bowl</h3>
-                    <p><i class="far fa-clock"></i><span id="time">20 minutes</span></p>
-                    <p><i class="fas fa-utensils"></i><span id="servings">2 servings</span></p>
-                    <span id="difficulty"></span>
-                </a>                
+            <div class="recipe-grid" id="recipe-grid">
+                <!-- Recipe cards will be added here dynamically using js-->          
             </div>
             
         </section>
+        <div class="modal hidden" id="recipeModal">
+        <!-- Modal will be dynamically added -->   
+        </div>
     </main>
     <footer>
         <p>Made with <i class="fas fa-heart"></i> for someone special</p>
     </footer>
+    <script src="/RecipeBook/js/app.js"></script>
 </body>
 </html>
