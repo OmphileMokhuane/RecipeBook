@@ -1,3 +1,56 @@
-# Dependency directories
+## Ignore Visual Studio temporary files, build results, and user-specific files
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio cache files
+*.cache
+*.ilk
+*.log
+*.tlog
+*.tmp
+*.tmp_proj
+
+# Rider/Resharper
+*.DotSettings.user
+_ReSharper*/
+*.DotSettings
+
+# NuGet packages
+*.nupkg
+packages/
+*.snupkg
+
+# VS Code directories
+.vscode/
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Node.js / npm
 node_modules/
 
+# Mac OS files
+.DS_Store
+
+# Others
+*.class
+*.jar
+*.war
+*.ear
